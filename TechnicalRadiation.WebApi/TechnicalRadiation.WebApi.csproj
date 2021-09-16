@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="..\TechnicalRadiation.Models\TechnicalRadiation.Models.csproj"/>
-    <PackageReference Include="../TechnicalRadiation.Repositories/TechnicalRadiation.Repositories.csproj"/>
+    <PackageReference Include="..\TechnicalRadiation.Repositories\TechnicalRadiation.Repositories.csproj"/>
     <PackageReference Include="..\TechnicalRadiation.Services\TechnicalRadiation.Services.csproj"/>
   </ItemGroup> 
  
