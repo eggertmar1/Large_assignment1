@@ -1,0 +1,12 @@
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.csproj.AssemblyReference.cache
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.AssemblyInfoInputs.cache
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.AssemblyInfo.cs
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.csproj.CoreCompileInputs.cache
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/bin/Debug/net5.0/TechnicalRadiation.Repositories.deps.json
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/bin/Debug/net5.0/TechnicalRadiation.Repositories.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/bin/Debug/net5.0/ref/TechnicalRadiation.Repositories.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/bin/Debug/net5.0/TechnicalRadiation.Repositories.pdb
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/ref/TechnicalRadiation.Repositories.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.pdb
