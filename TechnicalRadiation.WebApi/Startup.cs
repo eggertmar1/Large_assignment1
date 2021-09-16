@@ -32,7 +32,8 @@ namespace TechnicalRadiation.WebApi
         {   
             services.AddDbContext<NewsDbContext>(options => 
             {
-                options.UseSqlite(Configuration.GetConnectionString("NewsDbConnectionString"), b => b.MigrationsAssembly("TechnicalRadiation.WebApi"));
+                options.UseSqlite(Configuration.GetConnectionString("NewsDbConnectionString"), 
+                b => b.MigrationsAssembly("TechnicalRadiation.WebApi"));
             });
             services.AddControllers();
             services.AddSwaggerGen(c =>
