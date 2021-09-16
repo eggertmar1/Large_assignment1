@@ -1,7 +1,0 @@
-/Users/eggertsigtryggsson/Documents/Vefþjónustur/Large1_technical_radiation/obj/Debug/net5.0/Large1_technical_radiation.csproj.AssemblyReference.cache
-/Users/eggertsigtryggsson/Documents/Vefþjónustur/Large1_technical_radiation/obj/Debug/net5.0/Large1_technical_radiation.GeneratedMSBuildEditorConfig.editorconfig
-/Users/eggertsigtryggsson/Documents/Vefþjónustur/Large1_technical_radiation/obj/Debug/net5.0/Large1_technical_radiation.AssemblyInfoInputs.cache
-/Users/eggertsigtryggsson/Documents/Vefþjónustur/Large1_technical_radiation/obj/Debug/net5.0/Large1_technical_radiation.AssemblyInfo.cs
-/Users/eggertsigtryggsson/Documents/Vefþjónustur/Large1_technical_radiation/obj/Debug/net5.0/Large1_technical_radiation.csproj.CoreCompileInputs.cache
-/Users/eggertsigtryggsson/Documents/Vefþjónustur/Large1_technical_radiation/obj/Debug/net5.0/Large1_technical_radiation.MvcApplicationPartsAssemblyInfo.cs
-/Users/eggertsigtryggsson/Documents/Vefþjónustur/Large1_technical_radiation/obj/Debug/net5.0/Large1_technical_radiation.MvcApplicationPartsAssemblyInfo.cache
