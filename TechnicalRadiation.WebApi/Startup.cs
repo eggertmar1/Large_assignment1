@@ -12,7 +12,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace Large1_technical_radiation
+//using TechnicalRadiation.Repository.Contexts;
+
+
+namespace TechnicalRadiation.WebApi
 {
     public class Startup
     {
@@ -25,8 +28,8 @@ namespace Large1_technical_radiation
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-
+        {   
+            //services.AddDbContext<NewsDbContext>;
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

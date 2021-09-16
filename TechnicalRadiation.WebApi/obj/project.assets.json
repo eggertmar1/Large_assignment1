@@ -1162,9 +1162,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/Large1_technical_radiation.csproj",
-      "projectName": "Large1_technical_radiation",
-      "projectPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/Large1_technical_radiation.csproj",
+      "projectUniqueName": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/TechnicalRadiation.WebApi.csproj",
+      "projectName": "TechnicalRadiation.WebApi",
+      "projectPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/TechnicalRadiation.WebApi.csproj",
       "packagesPath": "/Users/eggertsigtryggsson/.nuget/packages/",
       "outputPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/obj/",
       "projectStyle": "PackageReference",
