@@ -10,3 +10,15 @@
 /Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.dll
 /Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/ref/TechnicalRadiation.Models.dll
 /Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.pdb
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/bin/Debug/net5.0/TechnicalRadiation.Models.deps.json
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/bin/Debug/net5.0/TechnicalRadiation.Models.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/bin/Debug/net5.0/ref/TechnicalRadiation.Models.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/bin/Debug/net5.0/TechnicalRadiation.Models.pdb
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.csproj.AssemblyReference.cache
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.AssemblyInfoInputs.cache
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.AssemblyInfo.cs
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.csproj.CoreCompileInputs.cache
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/obj/Debug/net5.0/ref/TechnicalRadiation.Models.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.pdb

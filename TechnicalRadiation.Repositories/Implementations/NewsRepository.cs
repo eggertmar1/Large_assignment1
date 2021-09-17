@@ -5,9 +5,9 @@ namespace TechnicalRadiation.Repositories.Implementations
 {
     public class NewsRepository : INewsRepository
     {
-        private readonly INewsDbContext _dbContext;
+        private readonly NewsDbContext _dbContext;
 
-        public NewsRepository(INewsDbContext dbContext) 
+        public NewsRepository(NewsDbContext dbContext) 
         {
             _dbContext = dbContext;
         } 

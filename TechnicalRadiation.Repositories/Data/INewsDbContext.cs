@@ -1,9 +1,9 @@
-using Microsoft.EntityFrameworkCore;
+// using Microsoft.EntityFrameworkCore;
 
-namespace TechnicalRadiation.Repositories.Data
-{
-    public interface INewsDbContext
-    {
+// namespace TechnicalRadiation.Repositories.Data
+// {
+//     public interface INewsDbContext
+//     {
         
-    }
-}
+//     }
+// }

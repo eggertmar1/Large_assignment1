@@ -1010,19 +1010,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/kristofer/.nuget/packages/": {}
+    "/Users/eggertsigtryggsson/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/TechnicalRadiation.Services.csproj",
+      "projectUniqueName": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Services/TechnicalRadiation.Services.csproj",
       "projectName": "TechnicalRadiation.Services",
-      "projectPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/TechnicalRadiation.Services.csproj",
-      "packagesPath": "/Users/kristofer/.nuget/packages/",
-      "outputPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/",
+      "projectPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Services/TechnicalRadiation.Services.csproj",
+      "packagesPath": "/Users/eggertsigtryggsson/.nuget/packages/",
+      "outputPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Services/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/kristofer/.nuget/NuGet/NuGet.Config"
+        "/Users/eggertsigtryggsson/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1034,11 +1034,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {
-              "projectPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj"
+            "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {
+              "projectPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj"
             },
-            "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Repositories/TechnicalRadiation.Repositories.csproj": {
-              "projectPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Repositories/TechnicalRadiation.Repositories.csproj"
+            "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/TechnicalRadiation.Repositories.csproj": {
+              "projectPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/TechnicalRadiation.Repositories.csproj"
             }
           }
         }

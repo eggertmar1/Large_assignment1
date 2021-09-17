@@ -28,3 +28,9 @@
 /Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.csproj.CoreCompileInputs.cache
 /Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.csproj.CopyComplete
 /Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.genruntimeconfig.cache
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/bin/Debug/net5.0/TechnicalRadiation.Repositories.runtimeconfig.json
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/bin/Debug/net5.0/TechnicalRadiation.Repositories.runtimeconfig.dev.json
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/bin/Debug/net5.0/TechnicalRadiation.Models.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/bin/Debug/net5.0/TechnicalRadiation.Models.pdb
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.csproj.CopyComplete
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Repositories/obj/Debug/net5.0/TechnicalRadiation.Repositories.genruntimeconfig.cache
