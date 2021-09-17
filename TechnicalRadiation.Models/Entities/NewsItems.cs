@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace TechnicalRadiation.Models.Entities
 
@@ -17,6 +18,7 @@ namespace TechnicalRadiation.Models.Entities
 
 
         // Navigation properties
-        
+        public ICollection<Authors> AuthorLink { get; set; }
+        public ICollection<Categories> CategoryLink { get; set; }
     }
 }

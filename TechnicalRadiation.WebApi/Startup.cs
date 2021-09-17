@@ -15,6 +15,8 @@ using Microsoft.OpenApi.Models;
 using TechnicalRadiation.Repositories.Data;
 using TechnicalRadiation.Repositories.Implementations;
 using TechnicalRadiation.Repositories.Interfaces;
+using TechnicalRadiation.Services.Implementations;
+using TechnicalRadiation.Services.Interfaces;
 
 namespace TechnicalRadiation.WebApi
 {
@@ -31,6 +33,7 @@ namespace TechnicalRadiation.WebApi
         public void ConfigureServices(IServiceCollection services)
         {   
             services.AddTransient<INewsRepository, NewsRepository>();
+            services.AddTransient<INewsItemsService, NewsItemsService>();
             //services.AddTransient<INewsDbContext, NewsDbContext>();
         
             services.AddDbContext<NewsDbContext>(options => 

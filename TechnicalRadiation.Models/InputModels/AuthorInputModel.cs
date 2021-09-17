@@ -8,7 +8,7 @@ namespace TechnicalRadiation.Models.InputModels
         [Required]
         public string Name { get; set; }
 
-        //TODO implement a custom URL validation attribute
+        [Url]
         public string ProfileImgSource { get; set; }
 
         [MaxLength(255)]

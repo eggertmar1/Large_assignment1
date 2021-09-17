@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechnicalRadiation.Repositories.Data;
 
 namespace TechnicalRadiation.WebApi.Migrations
 {
     [DbContext(typeof(NewsDbContext))]
-    partial class NewsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210917233656_attributeCorrect")]
+    partial class attributeCorrect
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,15 +52,10 @@ namespace TechnicalRadiation.WebApi.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("NewsItemsId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("ProfileImgSource")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("NewsItemsId");
 
                     b.ToTable("Authors");
                 });
@@ -81,15 +78,10 @@ namespace TechnicalRadiation.WebApi.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("NewsItemsId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Slug")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("NewsItemsId");
 
                     b.ToTable("Categories");
                 });
@@ -140,27 +132,6 @@ namespace TechnicalRadiation.WebApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("NewsItems");
-                });
-
-            modelBuilder.Entity("TechnicalRadiation.Models.Entities.Authors", b =>
-                {
-                    b.HasOne("TechnicalRadiation.Models.Entities.NewsItems", null)
-                        .WithMany("AuthorLink")
-                        .HasForeignKey("NewsItemsId");
-                });
-
-            modelBuilder.Entity("TechnicalRadiation.Models.Entities.Categories", b =>
-                {
-                    b.HasOne("TechnicalRadiation.Models.Entities.NewsItems", null)
-                        .WithMany("CategoryLink")
-                        .HasForeignKey("NewsItemsId");
-                });
-
-            modelBuilder.Entity("TechnicalRadiation.Models.Entities.NewsItems", b =>
-                {
-                    b.Navigation("AuthorLink");
-
-                    b.Navigation("CategoryLink");
                 });
 #pragma warning restore 612, 618
         }

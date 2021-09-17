@@ -8,7 +8,7 @@ namespace TechnicalRadiation.Models.InputModels
         [Required]
         public string Title { get; set; }
 
-        //TODO implement a custom valid url attribute
+        [Url]
         public string ImgSource { get; set; }
 
         [Required]
