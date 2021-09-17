@@ -1,9 +1,9 @@
 namespace TechnicalRadiation.Models.Entities
 
 {
-    public class NewsItemCategories 
+    public class AuthorNewsItem 
     {
-        public int CategoriesId { get; set; }
+        public int AuthorsId { get; set; }
         public int NewsItemsId { get; set; }
     }
 }

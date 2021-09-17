@@ -3,7 +3,7 @@ using System;
 namespace TechnicalRadiation.Models.Entities
 
 {
-    public class Category 
+    public class Categories 
     {        
         public int Id { get; set; }
         public string Name { get; set; }

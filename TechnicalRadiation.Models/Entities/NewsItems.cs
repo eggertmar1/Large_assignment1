@@ -3,7 +3,7 @@ using System;
 namespace TechnicalRadiation.Models.Entities
 
 {
-    public class NewsItem
+    public class NewsItems
     {
         public int Id { get; set; }
         public string Title { get; set; }
