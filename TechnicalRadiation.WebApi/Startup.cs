@@ -31,8 +31,8 @@ namespace TechnicalRadiation.WebApi
         public void ConfigureServices(IServiceCollection services)
         {   
             services.AddTransient<INewsRepository, NewsRepository>();
-            services.AddTransient<INewsDbContext, NewsDbContext>();
-
+            //services.AddTransient<INewsDbContext, NewsDbContext>();
+        
             services.AddDbContext<NewsDbContext>(options => 
             {
                 options.UseSqlite(Configuration.GetConnectionString("NewsDbConnectionString"), 

@@ -114,3 +114,9 @@
 /Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.RazorTargetAssemblyInfo.cache
 /Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.csproj.CopyComplete
 /Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.genruntimeconfig.cache
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/bin/Debug/net5.0/TechnicalRadiation.Models.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/bin/Debug/net5.0/TechnicalRadiation.Repositories.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/bin/Debug/net5.0/TechnicalRadiation.Services.dll
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/bin/Debug/net5.0/TechnicalRadiation.Models.pdb
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/bin/Debug/net5.0/TechnicalRadiation.Services.pdb
+/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/bin/Debug/net5.0/TechnicalRadiation.Repositories.pdb
