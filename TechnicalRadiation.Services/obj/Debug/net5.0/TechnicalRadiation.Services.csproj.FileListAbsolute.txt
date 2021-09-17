@@ -1,0 +1,17 @@
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/bin/Debug/net5.0/TechnicalRadiation.Services.deps.json
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/bin/Debug/net5.0/TechnicalRadiation.Services.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/bin/Debug/net5.0/ref/TechnicalRadiation.Services.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/bin/Debug/net5.0/TechnicalRadiation.Services.pdb
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/Debug/net5.0/TechnicalRadiation.Services.csproj.AssemblyReference.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/Debug/net5.0/TechnicalRadiation.Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/Debug/net5.0/TechnicalRadiation.Services.AssemblyInfoInputs.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/Debug/net5.0/TechnicalRadiation.Services.AssemblyInfo.cs
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/Debug/net5.0/TechnicalRadiation.Services.csproj.CoreCompileInputs.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/Debug/net5.0/TechnicalRadiation.Services.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/Debug/net5.0/ref/TechnicalRadiation.Services.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/Debug/net5.0/TechnicalRadiation.Services.pdb
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/bin/Debug/net5.0/TechnicalRadiation.Models.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/bin/Debug/net5.0/TechnicalRadiation.Repositories.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/bin/Debug/net5.0/TechnicalRadiation.Models.pdb
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/bin/Debug/net5.0/TechnicalRadiation.Repositories.pdb
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/obj/Debug/net5.0/TechnicalRadiation.Services.csproj.CopyComplete

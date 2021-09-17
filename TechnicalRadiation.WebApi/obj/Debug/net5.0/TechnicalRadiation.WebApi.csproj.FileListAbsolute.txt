@@ -53,3 +53,13 @@
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/obj/Debug/net5.0/ref/TechnicalRadiation.WebApi.dll
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.pdb
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.genruntimeconfig.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.csproj.AssemblyReference.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.AssemblyInfoInputs.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.AssemblyInfo.cs
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.csproj.CoreCompileInputs.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.MvcApplicationPartsAssemblyInfo.cs
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/ref/TechnicalRadiation.WebApi.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.pdb

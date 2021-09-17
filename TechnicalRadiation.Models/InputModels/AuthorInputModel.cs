@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 
 namespace TechnicalRadiation.Models.InputModels
 {
@@ -9,7 +11,7 @@ namespace TechnicalRadiation.Models.InputModels
         //TODO implement a custom URL validation attribute
         public string ProfileImgSource { get; set; }
 
-        [maxlength(255)]
+        [MaxLength(255)]
         public string Bio { get; set; }
     }
 }

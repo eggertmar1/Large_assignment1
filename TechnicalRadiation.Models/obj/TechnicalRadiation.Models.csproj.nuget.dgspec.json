@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {}
+    "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {}
   },
   "projects": {
-    "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {
+    "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj",
+        "projectUniqueName": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj",
         "projectName": "TechnicalRadiation.Models",
-        "projectPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj",
-        "packagesPath": "/Users/eggertsigtryggsson/.nuget/packages/",
-        "outputPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.Models/obj/",
+        "projectPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj",
+        "packagesPath": "/Users/kristofer/.nuget/packages/",
+        "outputPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/eggertsigtryggsson/.nuget/NuGet/NuGet.Config"
+          "/Users/kristofer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

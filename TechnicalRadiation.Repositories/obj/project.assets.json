@@ -5,7 +5,7 @@
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Humanizer.dll": {}
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
@@ -86,7 +86,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "5.0.10"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
+          "lib/netstandard2.1/_._": {}
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
@@ -398,6 +398,16 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "TechnicalRadiation.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TechnicalRadiation.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TechnicalRadiation.Models.dll": {}
         }
       }
     }
@@ -1100,6 +1110,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TechnicalRadiation.Models/1.0.0": {
+      "type": "project",
+      "path": "../TechnicalRadiation.Models/TechnicalRadiation.Models.csproj",
+      "msbuildProject": "../TechnicalRadiation.Models/TechnicalRadiation.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1107,7 +1122,8 @@
       "Microsoft.EntityFrameworkCore >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.10",
       "Microsoft.EntityFrameworkcore.Design >= 5.0.10",
-      "Newtonsoft.Json >= 13.0.1"
+      "Newtonsoft.Json >= 13.0.1",
+      "TechnicalRadiation.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1134,7 +1150,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {
+              "projectPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

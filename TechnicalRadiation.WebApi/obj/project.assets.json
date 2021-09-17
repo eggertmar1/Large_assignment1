@@ -438,6 +438,46 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "TechnicalRadiation.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TechnicalRadiation.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TechnicalRadiation.Models.dll": {}
+        }
+      },
+      "TechnicalRadiation.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.10",
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.10",
+          "Newtonsoft.Json": "13.0.1",
+          "TechnicalRadiation.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TechnicalRadiation.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TechnicalRadiation.Repositories.dll": {}
+        }
+      },
+      "TechnicalRadiation.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "TechnicalRadiation.Models": "1.0.0",
+          "TechnicalRadiation.Repositories": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TechnicalRadiation.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TechnicalRadiation.Services.dll": {}
+        }
       }
     }
   },
@@ -1146,6 +1186,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TechnicalRadiation.Models/1.0.0": {
+      "type": "project",
+      "path": "../TechnicalRadiation.Models/TechnicalRadiation.Models.csproj",
+      "msbuildProject": "../TechnicalRadiation.Models/TechnicalRadiation.Models.csproj"
+    },
+    "TechnicalRadiation.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../TechnicalRadiation.Repositories/TechnicalRadiation.Repositories.csproj",
+      "msbuildProject": "../TechnicalRadiation.Repositories/TechnicalRadiation.Repositories.csproj"
+    },
+    "TechnicalRadiation.Services/1.0.0": {
+      "type": "project",
+      "path": "../TechnicalRadiation.Services/TechnicalRadiation.Services.csproj",
+      "msbuildProject": "../TechnicalRadiation.Services/TechnicalRadiation.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1153,23 +1208,25 @@
       "Microsoft.EntityFrameworkCore >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.10",
       "Newtonsoft.Json >= 13.0.1",
-      "Swashbuckle.AspNetCore >= 5.6.3"
+      "Swashbuckle.AspNetCore >= 5.6.3",
+      "TechnicalRadiation.Models >= 1.0.0",
+      "TechnicalRadiation.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/eggertsigtryggsson/.nuget/packages/": {}
+    "/Users/kristofer/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/TechnicalRadiation.WebApi.csproj",
+      "projectUniqueName": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/TechnicalRadiation.WebApi.csproj",
       "projectName": "TechnicalRadiation.WebApi",
-      "projectPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/TechnicalRadiation.WebApi.csproj",
-      "packagesPath": "/Users/eggertsigtryggsson/.nuget/packages/",
-      "outputPath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/TechnicalRadiation.WebApi/obj/",
+      "projectPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/TechnicalRadiation.WebApi.csproj",
+      "packagesPath": "/Users/kristofer/.nuget/packages/",
+      "outputPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/eggertsigtryggsson/.nuget/NuGet/NuGet.Config"
+        "/Users/kristofer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1180,7 +1237,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {
+              "projectPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj"
+            },
+            "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/TechnicalRadiation.Services.csproj": {
+              "projectPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Services/TechnicalRadiation.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

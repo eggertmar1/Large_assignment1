@@ -1,0 +1,12 @@
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.csproj.AssemblyReference.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.AssemblyInfoInputs.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.AssemblyInfo.cs
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.csproj.CoreCompileInputs.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/bin/Debug/net5.0/TechnicalRadiation.Models.deps.json
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/bin/Debug/net5.0/TechnicalRadiation.Models.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/bin/Debug/net5.0/ref/TechnicalRadiation.Models.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/bin/Debug/net5.0/TechnicalRadiation.Models.pdb
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/ref/TechnicalRadiation.Models.dll
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.pdb

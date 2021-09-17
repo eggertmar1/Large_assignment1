@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace TechnicalRadiation.Models.InputModels
 {
@@ -11,11 +12,11 @@ namespace TechnicalRadiation.Models.InputModels
         public string ImgSource { get; set; }
 
         [Required]
-        [maxlength(50)]
+        [MaxLength(50)]
         public string ShortDescription { get; set; }
 
-        [minlenght(50)]
-        [maxlength(255)]
+        [MinLength(50)]
+        [MaxLength(255)]
         public string LongDescription { get; set; }
 
         [Required]
