@@ -1,7 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 
-namespace TechnicalRadiation.Repository.Contexts
+namespace TechnicalRadiation.Repositories.Data
 {
     public class NewsDbContext : DbContext
     {

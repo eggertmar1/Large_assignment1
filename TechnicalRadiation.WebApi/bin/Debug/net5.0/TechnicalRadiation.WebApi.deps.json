@@ -37,6 +37,8 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.10",
           "Newtonsoft.Json": "13.0.1",
           "Swashbuckle.AspNetCore": "5.6.3",
+          "TechnicalRadiation.Models": "1.0.0",
+          "TechnicalRadiation.Services": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -685,6 +687,40 @@
         }
       },
       "System.Memory/4.5.3": {},
+      "TechnicalRadiation.Models/1.0.0": {
+        "runtime": {
+          "TechnicalRadiation.Models.dll": {}
+        },
+        "compile": {
+          "TechnicalRadiation.Models.dll": {}
+        }
+      },
+      "TechnicalRadiation.Repositories/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.10",
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.10",
+          "Newtonsoft.Json": "13.0.1",
+          "TechnicalRadiation.Models": "1.0.0"
+        },
+        "runtime": {
+          "TechnicalRadiation.Repositories.dll": {}
+        },
+        "compile": {
+          "TechnicalRadiation.Repositories.dll": {}
+        }
+      },
+      "TechnicalRadiation.Services/1.0.0": {
+        "dependencies": {
+          "TechnicalRadiation.Models": "1.0.0",
+          "TechnicalRadiation.Repositories": "1.0.0"
+        },
+        "runtime": {
+          "TechnicalRadiation.Services.dll": {}
+        },
+        "compile": {
+          "TechnicalRadiation.Services.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2609,6 +2645,21 @@
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "TechnicalRadiation.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TechnicalRadiation.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TechnicalRadiation.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",
