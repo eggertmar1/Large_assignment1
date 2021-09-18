@@ -14,10 +14,9 @@ namespace TechnicalRadiation.Services.Implementations
             _newsRepository = newsRepository;
         }
 
-        public IEnumerable<NewsItemDto> GetAllNewsItems() 
-        {
-            return _newsRepository.GetAllNewsItems();
-        }
+        public IEnumerable<NewsItemDto> GetAllNewsItems() => _newsRepository.GetAllNewsItems();
+    
+        public NewsItemDetailDto GetNewsItemById(int id) => _newsRepository.GetNewsItemById(id);
 
     }  
 }

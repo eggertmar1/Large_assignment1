@@ -17,13 +17,28 @@ namespace TechnicalRadiation.Repositories.Implementations
 
         public IEnumerable<NewsItemDto> GetAllNewsItems() 
         {
-            var newsItems = _dbContext.NewsItems.Select(n => new NewsItemDto {
+            var newsItems = _dbContext.NewsItems.Select(n => new NewsItemDto 
+            {
                 Id = n.Id,
                 Title = n.Title,
                 ImgSource = n.ImgSource,
                 ShortDescription = n.ShortDescription
-            });
-            return newsItems.ToList();
+            }).ToList();
+            return newsItems;
+        }
+
+        public NewsItemDetailDto GetNewsItemById(int id) 
+        {
+            var newsItem = _dbContext.NewsItems.Where(n => n.Id == id).Select(n => new NewsItemDetailDto 
+            {
+                Id = n.Id,
+                Title = n.Title,
+                ImgSource = n.ImgSource,
+                ShortDescription = n.ShortDescription,
+                LongDescription = n.LongDescription,
+                PublishDate = n.PublishDate
+            }).ToList()[0];
+            return newsItem;
         }
     }
 }

@@ -7,5 +7,6 @@ namespace TechnicalRadiation.Services.Interfaces
     public interface INewsItemsService  
     {
         public IEnumerable<NewsItemDto> GetAllNewsItems();
+        public NewsItemDetailDto GetNewsItemById(int id);
     }
 }
