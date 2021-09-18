@@ -34,6 +34,8 @@ namespace TechnicalRadiation.WebApi
         {   
             services.AddTransient<INewsRepository, NewsRepository>();
             services.AddTransient<INewsItemsService, NewsItemsService>();
+            services.AddTransient<ICategoriesRepository, CategoriesRepository>();
+            services.AddTransient<ICategoriesService, CategoriesService>();
             //services.AddTransient<INewsDbContext, NewsDbContext>();
         
             services.AddDbContext<NewsDbContext>(options => 
