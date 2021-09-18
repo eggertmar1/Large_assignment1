@@ -1,6 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using TechnicalRadiation.Services.Implementations;
 using TechnicalRadiation.Services.Interfaces;
+using TechnicalRadiation.Models;
+using TechnicalRadiation.Models.DTOs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace TechnicalRadiation.WebApi.Controllers 
 {
@@ -12,11 +17,15 @@ namespace TechnicalRadiation.WebApi.Controllers
         public NewsItemsController(INewsItemsService newsItemService) 
         {
             _newsItemService = newsItemService;
-        }
-
+        } 
+ 
         [HttpGet]
         [Route("")]
-        public IActionResult GetAllNewsItems() => Ok(_newsItemService.GetAllNewsItems());
+        public IActionResult GetAllNewsItems([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 25)
+        {
+            var envelope = new Envelope<NewsItemDto>(pageNumber,pageSize, _newsItemService.GetAllNewsItems());
+            return Ok(envelope.Items);
+        } 
 
         [HttpGet]
         [Route("{id:int}", Name = "GetNewsItemById")]
