@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {}
+    "C:\\Users\\oliva\\OneDrive\\Tölvunarfræði\\3.önn_haust_2021\\Vefþjónustur\\Large_assignment1\\TechnicalRadiation.Models\\TechnicalRadiation.Models.csproj": {}
   },
   "projects": {
-    "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj": {
+    "C:\\Users\\oliva\\OneDrive\\Tölvunarfræði\\3.önn_haust_2021\\Vefþjónustur\\Large_assignment1\\TechnicalRadiation.Models\\TechnicalRadiation.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj",
+        "projectUniqueName": "C:\\Users\\oliva\\OneDrive\\Tölvunarfræði\\3.önn_haust_2021\\Vefþjónustur\\Large_assignment1\\TechnicalRadiation.Models\\TechnicalRadiation.Models.csproj",
         "projectName": "TechnicalRadiation.Models",
-        "projectPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/TechnicalRadiation.Models.csproj",
-        "packagesPath": "/Users/kristofer/.nuget/packages/",
-        "outputPath": "/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.Models/obj/",
+        "projectPath": "C:\\Users\\oliva\\OneDrive\\Tölvunarfræði\\3.önn_haust_2021\\Vefþjónustur\\Large_assignment1\\TechnicalRadiation.Models\\TechnicalRadiation.Models.csproj",
+        "packagesPath": "C:\\Users\\oliva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oliva\\OneDrive\\Tölvunarfræði\\3.önn_haust_2021\\Vefþjónustur\\Large_assignment1\\TechnicalRadiation.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/kristofer/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\oliva\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Collections.Generic;
 using TechnicalRadiation.Models.InputModels;
 using Microsoft.EntityFrameworkCore;
+using TechnicalRadiation.Models.Entities;
 
 namespace TechnicalRadiation.Repositories.Implementations 
 {
@@ -50,6 +51,43 @@ namespace TechnicalRadiation.Repositories.Implementations
                 ShortDescription = ani.NewsItems.ShortDescription
             }).ToList();
             return newsItems;
+        }
+
+        public int CreateAuthor(AuthorInputModel author)
+        {
+            var entity = new Authors
+            {
+                Name = author.Name,
+                ProfileImgSource = author.ProfileImgSource,
+                Bio = author.Bio,
+                ModifiedBy = "TechnicalRadiationAdmin"
+
+            };
+            _dbContext.Authors.Add(entity);
+            _dbContext.SaveChanges();
+            return entity.Id;
+        }
+
+        public void UpdateAuthor(int id, AuthorInputModel author)
+        {
+            var entity = _dbContext.Authors.FirstOrDefault(a => a.Id == id);
+            if (entity == null) { return; }
+
+            entity.Name = author.Name;
+            entity.ProfileImgSource = author.ProfileImgSource;
+            entity.Bio = author.Bio;
+
+            _dbContext.SaveChanges();
+        }
+
+        public void DeleteAuthorById(int id)
+        {
+            var entity = _dbContext.Authors.FirstOrDefault(r => r.Id == id);
+            if (entity == null) { return; }
+
+            // Delete the entity
+            _dbContext.Authors.Remove(entity);
+            _dbContext.SaveChanges();
         }
     }
 }
