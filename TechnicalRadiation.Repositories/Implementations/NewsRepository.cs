@@ -2,13 +2,18 @@ using System.Collections.Generic;
 using TechnicalRadiation.Repositories.Interfaces;
 using TechnicalRadiation.Repositories.Data;
 using TechnicalRadiation.Models.DTOs;
+using TechnicalRadiation.Models.InputModels;
+using TechnicalRadiation.Models.Entities;
 using System.Linq;
+using System;
+//using AutoMapper;
 
 namespace TechnicalRadiation.Repositories.Implementations
 {
     public class NewsRepository : INewsRepository
     {
         private readonly NewsDbContext _dbContext;
+
 
         public NewsRepository(NewsDbContext dbContext) 
         {
@@ -40,5 +45,42 @@ namespace TechnicalRadiation.Repositories.Implementations
             }).ToList()[0];
             return newsItem;
         }
+
+        public int CreateNewsItem(NewsItemInputModel item)
+        {
+            //using var db = new NewsDbContext();
+            var entity = new NewsItems
+            {
+                Title = item.Title,
+                ImgSource = item.ImgSource,
+                ShortDescription = item.ShortDescription,
+                LongDescription = item.LongDescription,
+                PublishDate = DateTime.Now
+            };
+            _dbContext.NewsItems.Add(entity);
+            _dbContext.SaveChanges();
+            return 1;
+
+            /*var items = _dbContext.GetAllNewsItems();
+            var newsItems = _newsRepository.GetAllNewsItems();
+            var entity = Mapper.Map<NewsItems>(item);
+            newsItems.Add(entity);
+            return 1;
+            /*
+            entity.Id = 2;
+            entity.Title = item.title;
+            entity.ImgSource = item.imgSource;
+            entity.ShortDescription = item.shortDescription;
+            entity.LongDescription = item.longDescription;
+            entity.PublishDate = DateTime.Now;
+            
+
+            _dbContext.NewsItems.Add(entity);
+            //_dbContext.NewsItems.Add(entity);
+            //items.SaveChanges();
+            return 1;
+            */
+        }
+
     }
 }

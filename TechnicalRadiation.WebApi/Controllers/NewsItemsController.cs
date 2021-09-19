@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TechnicalRadiation.Services.Implementations;
+using TechnicalRadiation.Models.InputModels;
 using TechnicalRadiation.Services.Interfaces;
 using TechnicalRadiation.Models;
 using TechnicalRadiation.Models.DTOs;
@@ -30,6 +31,15 @@ namespace TechnicalRadiation.WebApi.Controllers
         [HttpGet]
         [Route("{id:int}", Name = "GetNewsItemById")]
         public IActionResult GetNewsItemById(int id) => Ok(_newsItemService.GetNewsItemById(id));
+
+
+        [HttpPost]
+        [Route("")]
+        public IActionResult CreateNewsItem([FromBody] NewsItemInputModel item)
+        {
+            int newId = _newsItemService.CreateNewsItem(item);
+            return Ok(newId);
+        }
         
     }
 }

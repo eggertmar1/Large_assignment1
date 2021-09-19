@@ -34,3 +34,15 @@
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.dll
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/ref/TechnicalRadiation.Models.dll
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.Models/obj/Debug/net5.0/TechnicalRadiation.Models.pdb
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\bin\Debug\net5.0\TechnicalRadiation.Models.deps.json
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\bin\Debug\net5.0\TechnicalRadiation.Models.dll
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\bin\Debug\net5.0\ref\TechnicalRadiation.Models.dll
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\bin\Debug\net5.0\TechnicalRadiation.Models.pdb
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\obj\Debug\net5.0\TechnicalRadiation.Models.csproj.AssemblyReference.cache
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\obj\Debug\net5.0\TechnicalRadiation.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\obj\Debug\net5.0\TechnicalRadiation.Models.AssemblyInfoInputs.cache
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\obj\Debug\net5.0\TechnicalRadiation.Models.AssemblyInfo.cs
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\obj\Debug\net5.0\TechnicalRadiation.Models.csproj.CoreCompileInputs.cache
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\obj\Debug\net5.0\TechnicalRadiation.Models.dll
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\obj\Debug\net5.0\ref\TechnicalRadiation.Models.dll
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.Models\obj\Debug\net5.0\TechnicalRadiation.Models.pdb
