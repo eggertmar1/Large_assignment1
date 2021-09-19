@@ -48,7 +48,6 @@ namespace TechnicalRadiation.Repositories.Implementations
 
         public int CreateNewsItem(NewsItemInputModel item)
         {
-            //using var db = new NewsDbContext();
             var entity = new NewsItems
             {
                 Title = item.Title,
@@ -59,28 +58,30 @@ namespace TechnicalRadiation.Repositories.Implementations
             };
             _dbContext.NewsItems.Add(entity);
             _dbContext.SaveChanges();
-            return 1;
-
-            /*var items = _dbContext.GetAllNewsItems();
-            var newsItems = _newsRepository.GetAllNewsItems();
-            var entity = Mapper.Map<NewsItems>(item);
-            newsItems.Add(entity);
-            return 1;
-            /*
-            entity.Id = 2;
-            entity.Title = item.title;
-            entity.ImgSource = item.imgSource;
-            entity.ShortDescription = item.shortDescription;
-            entity.LongDescription = item.longDescription;
-            entity.PublishDate = DateTime.Now;
-            
-
-            _dbContext.NewsItems.Add(entity);
-            //_dbContext.NewsItems.Add(entity);
-            //items.SaveChanges();
-            return 1;
-            */
+            return entity.Id;
         }
 
+        public void UpdateNewsItem(int id, NewsItemInputModel item)
+        {
+            var entity = _dbContext.NewsItems.FirstOrDefault(a => a.Id == id);
+            if (entity == null) { return; }
+
+            entity.Title = item.Title;
+            entity.ImgSource = item.ImgSource;
+            entity.ShortDescription = item.ShortDescription;
+            entity.LongDescription = item.LongDescription;
+
+            _dbContext.SaveChanges();
+        }
+
+        public void DeleteNewsItemById(int id)
+        {
+            var entity = _dbContext.NewsItems.FirstOrDefault(r => r.Id == id);
+            if (entity == null) { return; }
+
+            // Delete the entity
+            _dbContext.NewsItems.Remove(entity);
+            _dbContext.SaveChanges();
+        }
     }
 }

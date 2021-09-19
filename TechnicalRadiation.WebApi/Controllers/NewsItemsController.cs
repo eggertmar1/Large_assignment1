@@ -40,6 +40,22 @@ namespace TechnicalRadiation.WebApi.Controllers
             int newId = _newsItemService.CreateNewsItem(item);
             return Ok(newId);
         }
+
+        [HttpPut]
+        [Route("{id:int}")]
+        public IActionResult UpdateNewsItem(int id, [FromBody] NewsItemInputModel item)
+        {
+            _newsItemService.UpdateNewsItem(id, item);
+            return NoContent();
+        }
+
+        [HttpDelete]
+        [Route("{id:int}")]
+        public IActionResult DeleteNewsItemById(int id)
+        {
+            _newsItemService.DeleteNewsItemById(id);
+            return NoContent();
+        }
         
     }
 }
