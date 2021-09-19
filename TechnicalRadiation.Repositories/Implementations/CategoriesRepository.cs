@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using TechnicalRadiation.Models.InputModels;
 using TechnicalRadiation.Models.Entities;
 using System.Globalization;
+using Microsoft.EntityFrameworkCore;
 
 namespace TechnicalRadiation.Repositories.Implementations 
 {
@@ -31,12 +32,25 @@ namespace TechnicalRadiation.Repositories.Implementations
 
         public CategoryDetailDto GetCategoryById(int id) 
         {
+            
             var category = _dbContext.Categories.Where(c => c.Id == id).Select(c => new CategoryDetailDto
             {
                 Id = c.Id,
                 Name = c.Name,
                 Slug = c.Slug,
-                NumberOfNewsItems = 404//_dbContext.NewsItems.Join(n => n.Id == _dbContext.CategoryNewsItem.NewsItemsId)
+                NumberOfNewsItems = _dbContext.CategoryNewsItem
+                                    .Where(c => c.CategoriesId == id)
+                                    .Select(cni => new NewsItems {
+                                        Id = cni.NewsItems.Id,
+                                        Title = cni.NewsItems.Title,
+                                        ImgSource = cni.NewsItems.ImgSource,
+                                        ShortDescription = cni.NewsItems.ShortDescription,
+                                        LongDescription = cni.NewsItems.LongDescription,
+                                        PublishDate = cni.NewsItems.PublishDate,
+                                        ModifiedBy = cni.NewsItems.ModifiedBy,
+                                        CreatedDate = cni.NewsItems.CreatedDate,
+                                        ModifiedDate = cni.NewsItems.ModifiedDate
+                                    }).ToList().Count             
             }).ToList()[0];
             return category;
         }
