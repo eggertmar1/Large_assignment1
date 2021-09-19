@@ -8,5 +8,6 @@ namespace TechnicalRadiation.Services.Interfaces
     {
         public IEnumerable<AuthorDto> GetAllAuthors();
         public AuthorDetailDto GetAuthorById(int id);
+        public List<NewsItemDto> GetNewsItemsByAuthorId(int authorId);
     }
 }

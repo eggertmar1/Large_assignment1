@@ -18,5 +18,7 @@ namespace TechnicalRadiation.Services.Implementations
 
         public AuthorDetailDto GetAuthorById(int id) => _authorRepository.GetAuthorById(id);
 
+        public List<NewsItemDto> GetNewsItemsByAuthorId(int authorId) => _authorRepository.GetNewsItemsByAuthorId(authorId);
+
     }
 }

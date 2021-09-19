@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace TechnicalRadiation.Models.Entities
 
@@ -11,5 +12,7 @@ namespace TechnicalRadiation.Models.Entities
         public string ModifiedBy { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime ModifiedDate { get; set; }
+
+        public ICollection<NewsItems> NewsItemsLink { get; set; }
     }
 }

@@ -172,6 +172,7 @@
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.RazorTargetAssemblyInfo.cache
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.csproj.CopyComplete
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.genruntimeconfig.cache
+/Users/kristofer/Desktop/A_University/5th_semester/z_large_assignments/Large_assignment1/TechnicalRadiation.WebApi/bin/Debug/net5.0/AutoMapper.dll
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\appsettings.json
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\TechnicalRadiation.WebApi.exe
@@ -181,6 +182,7 @@ C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\TechnicalRadiation.WebApi.dll
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\ref\TechnicalRadiation.WebApi.dll
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\TechnicalRadiation.WebApi.pdb
+C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\Humanizer.dll
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
@@ -260,4 +262,3 @@ C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\obj\Debug\net5.0\ref\TechnicalRadiation.WebApi.dll
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\obj\Debug\net5.0\TechnicalRadiation.WebApi.pdb
 C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\obj\Debug\net5.0\TechnicalRadiation.WebApi.genruntimeconfig.cache
-C:\Users\oliva\OneDrive\Tölvunarfræði\3.önn_haust_2021\Vefþjónustur\Large_assignment1\TechnicalRadiation.WebApi\bin\Debug\net5.0\AutoMapper.dll

@@ -1,6 +1,8 @@
 using TechnicalRadiation.Models.DTOs;
 using System.Linq;
 using System.Collections.Generic;
+using TechnicalRadiation.Models.InputModels;
+using System.Collections.Generic;
 
 namespace TechnicalRadiation.Services.Interfaces
 {
@@ -8,5 +10,14 @@ namespace TechnicalRadiation.Services.Interfaces
     {
         public IEnumerable<CategoryDto> GetAllCategories();
         public CategoryDetailDto GetCategoryById(int id);
+      
+
+        int CreateCategory(CategoryInputModel item);
+
+        void UpdateCategory(int id, CategoryInputModel category);
+
+        void DeleteCategoryById(int id);
+
+
     }
 }
