@@ -11,7 +11,7 @@ namespace TechnicalRadiation.Services.Interfaces
         public CategoryDetailDto GetCategoryById(int id);
       
 
-        int CreateCategory(CategoryInputModel item);
+        int CreateCategory(CategoryInputModel category);
 
         void UpdateCategory(int id, CategoryInputModel category);
 
