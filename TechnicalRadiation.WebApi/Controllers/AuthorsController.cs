@@ -21,5 +21,9 @@ namespace TechnicalRadiation.WebApi.Controllers
         [HttpGet]
         [Route("{id:int}", Name = "GetAuthorById")]
         public IActionResult GetAuthorById(int id) => Ok(_authorsService.GetAuthorById(id));
+
+        [HttpGet]
+        [Route("{authorId:int}/newsItems", Name = "GetNewsItemsByAuthorId")]
+        public IActionResult GetNewsItemsByAuthorId(int authorId) => Ok(_authorsService.GetNewsItemsByAuthorId(authorId));
     }
 }

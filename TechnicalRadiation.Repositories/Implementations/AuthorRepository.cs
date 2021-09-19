@@ -4,6 +4,7 @@ using TechnicalRadiation.Models.DTOs;
 using System.Linq;
 using System.Collections.Generic;
 using TechnicalRadiation.Models.InputModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace TechnicalRadiation.Repositories.Implementations 
 {
@@ -36,6 +37,19 @@ namespace TechnicalRadiation.Repositories.Implementations
                 ProfileImgSource = c.ProfileImgSource
             }).ToList()[0];
             return author;
+        }
+
+        public List<NewsItemDto> GetNewsItemsByAuthorId(int authorId)
+        {
+            var newsItems = _dbContext.AuthorNewsItem
+            .Where(a => a.AuthorsId == authorId)
+            .Select(ani => new NewsItemDto {
+                Id = ani.NewsItems.Id,
+                Title = ani.NewsItems.Title,
+                ImgSource = ani.NewsItems.ImgSource,
+                ShortDescription = ani.NewsItems.ShortDescription
+            }).ToList();
+            return newsItems;
         }
     }
 }

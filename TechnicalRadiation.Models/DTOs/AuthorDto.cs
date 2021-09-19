@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using TechnicalRadiation.Models.Entities;
+
 namespace TechnicalRadiation.Models.DTOs
 {
     public class AuthorDto : HyperMediaModel
