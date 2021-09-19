@@ -14,9 +14,10 @@ namespace TechnicalRadiation.Services.Implementations
             _authorRepository = authorRepository;
         }
 
-        public IEnumerable<AuthorDto> GetAllAuthors() => _authorRepository.GetAllAuthors();
+        public IEnumerable<AuthorDto> GetAllAuthors() => _authorRepository.AddLinksToDtoAllAuthors(_authorRepository.GetAllAuthors());
 
-        public AuthorDetailDto GetAuthorById(int id) => _authorRepository.GetAuthorById(id);
+        public AuthorDetailDto GetAuthorById(int id) => _authorRepository.AddLinksToDto (_authorRepository.GetAuthorById(id));
+
 
         public List<NewsItemDto> GetNewsItemsByAuthorId(int authorId) => _authorRepository.GetNewsItemsByAuthorId(authorId);
 

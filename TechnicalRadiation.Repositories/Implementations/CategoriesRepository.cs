@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using TechnicalRadiation.Models.InputModels;
 using TechnicalRadiation.Models.Entities;
 using System.Globalization;
+using TechnicalRadiation.Models.Extensions;
 
 namespace TechnicalRadiation.Repositories.Implementations 
 {
@@ -80,5 +81,23 @@ namespace TechnicalRadiation.Repositories.Implementations
             _dbContext.Categories.Remove(entity);
             _dbContext.SaveChanges();
         }
+        public CategoryDetailDto AddLinksToDto(CategoryDetailDto dto) 
+        {
+            dto.Links.AddReference("self", new {href = $"api/categories/{dto.Id}"});
+            dto.Links.AddReference("edit", new {href = $"api/categories/{dto.Id}"});
+            dto.Links.AddReference("delete", new {href = $"api/categories/{dto.Id}"});
+            return dto;
+        }
+        public IEnumerable<CategoryDto> AddLinksToDtoAllCategories(IEnumerable<CategoryDto> dtos) 
+        {
+            foreach(CategoryDto dto in dtos)
+            {
+                dto.Links.AddReference("self", new {href = $"api/categories/{dto.Id}"});
+                dto.Links.AddReference("edit", new {href = $"api/categories/{dto.Id}"});
+                dto.Links.AddReference("delete", new {href = $"api/categories/{dto.Id}"});
+            }
+            return dtos;
+        }
+
     }
 }

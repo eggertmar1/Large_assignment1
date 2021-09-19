@@ -5,6 +5,8 @@ using System.Linq;
 using System.Collections.Generic;
 using TechnicalRadiation.Models.InputModels;
 using Microsoft.EntityFrameworkCore;
+using TechnicalRadiation.Models.Extensions;
+using TechnicalRadiation.Models;
 
 namespace TechnicalRadiation.Repositories.Implementations 
 {
@@ -50,6 +52,37 @@ namespace TechnicalRadiation.Repositories.Implementations
                 ShortDescription = ani.NewsItems.ShortDescription
             }).ToList();
             return newsItems;
+        }
+        public AuthorDetailDto AddLinksToDto(AuthorDetailDto dto) 
+        {
+            dto.Links.AddReference("self", new {href = $"api/authors/{dto.Id}"});
+            dto.Links.AddReference("edit", new {href = $"api/authors/{dto.Id}"});
+            dto.Links.AddReference("delete", new {href = $"api/authors/{dto.Id}"});
+            dto.Links.AddReference("newsItems", new {href = $"api/authors/{dto.Id}/newsItems"});
+            dto.Links.AddListReference(
+                "newsItemsDetailed",
+                _dbContext.AuthorNewsItem  
+                    .Where(i => i.AuthorsId == dto.Id)
+                    .Select(i => $"api/{i.NewsItemsId}")
+            );
+            return dto;
+        }
+        public IEnumerable<AuthorDto> AddLinksToDtoAllAuthors(IEnumerable<AuthorDto> dtos) 
+        {
+            foreach(AuthorDto dto in dtos)
+            {
+                dto.Links.AddReference("self", new {href = $"api/authors/{dto.Id}"});
+                dto.Links.AddReference("edit", new {href = $"api/authors/{dto.Id}"});
+                dto.Links.AddReference("delete", new {href = $"api/authors/{dto.Id}"});
+                dto.Links.AddReference("newsItems", new {href = $"api/authors/{dto.Id}/newsItems"});
+                dto.Links.AddListReference(
+                    "newsItemsDetailed",
+                    _dbContext.AuthorNewsItem  
+                        .Where(i => i.AuthorsId == dto.Id)
+                        .Select(i => $"api/{i.NewsItemsId}")
+                );
+            }
+            return dtos;
         }
     }
 }

@@ -6,6 +6,7 @@ using TechnicalRadiation.Models.InputModels;
 using TechnicalRadiation.Models.Entities;
 using System.Linq;
 using System;
+using TechnicalRadiation.Models.Extensions;
 //using AutoMapper;
 
 namespace TechnicalRadiation.Repositories.Implementations
@@ -83,20 +84,37 @@ namespace TechnicalRadiation.Repositories.Implementations
             _dbContext.NewsItems.Remove(entity);
             _dbContext.SaveChanges();
         }
-        // private AuthorDetailDto AddLinksToDto(AuthorDetailDto dto) 
-        // {
-        //     dto.Links.AddReference("self", new {href = $"api/authors/{dto.Id}"});
-        //     dto.Links.AddReference("edit", new {href = $"api/authors/{dto.Id}"});
-        //     dto.Links.AddReference("delete", new {href = $"api/authors/{dto.Id}"});
-        //     dto.Links.AddReference("newsItems", new {href = $"api/authors/{dto.Id}/newsItems"});
-        //     dto.Links.AddListReference(
-        //         "newsItemsDetailed",
-        //         _dbContext.AuthorNewsItem  
-        //             .where(i => i.AuthorId == dto.Id)
-        //             .Select(i => $"api/{i.NewsItemId}")
-        //     );
-        //     return dto;
+        public NewsItemDetailDto AddLinksToDto(NewsItemDetailDto dto) 
+        {
+            dto.Links.AddReference("self", new {href = $"api/{dto.Id}"});
+            dto.Links.AddReference("edit", new {href = $"api/{dto.Id}"});
+            dto.Links.AddReference("delete", new {href = $"api/{dto.Id}"});
+            dto.Links.AddReference("authors", new {href = $"api/authors/{dto.Id}"});
+            dto.Links.AddListReference(
+                "categories",
+                _dbContext.CategoryNewsItem  
+                    .Where(i => i.CategoriesId == dto.Id)
+                    .Select(i => $"api/categories/{i.CategoriesId}")
+            );
+            return dto;
 
+        }
+        public IEnumerable<NewsItemDto> AddLinksToDtoAllNews(IEnumerable<NewsItemDto> dtos) 
+        {
+            foreach(NewsItemDto dto in dtos)
+            {
+                dto.Links.AddReference("self", new {href = $"api/{dto.Id}"});
+                dto.Links.AddReference("edit", new {href = $"api/{dto.Id}"});
+                dto.Links.AddReference("delete", new {href = $"api/{dto.Id}"});
+                dto.Links.AddReference("authors", new {href = $"api/authors/{dto.Id}"});
+                dto.Links.AddListReference(
+                    "categories",
+                    _dbContext.CategoryNewsItem  
+                        .Where(i => i.CategoriesId == dto.Id)
+                        .Select(i => $"api/categories/{i.Categories.Id}")
+                );
+            }
+            return dtos;
         }
     }
 }

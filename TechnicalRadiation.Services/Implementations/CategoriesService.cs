@@ -15,8 +15,8 @@ namespace TechnicalRadiation.Services.Implementations
             _categoriesRepository = categoriesRepository;
         }
 
-        public IEnumerable<CategoryDto> GetAllCategories() => _categoriesRepository.GetAllCategories();
-        public CategoryDetailDto GetCategoryById(int id) => _categoriesRepository.GetCategoryById(id);
+        public IEnumerable<CategoryDto> GetAllCategories() =>_categoriesRepository.AddLinksToDtoAllCategories(_categoriesRepository.GetAllCategories());
+        public CategoryDetailDto GetCategoryById(int id) =>_categoriesRepository.AddLinksToDto(_categoriesRepository.GetCategoryById(id));
 
 
         public int CreateCategory(CategoryInputModel category)
