@@ -9,7 +9,7 @@ namespace TechnicalRadiation.Services.Interfaces
     {
         public IEnumerable<AuthorDto> GetAllAuthors();
         public AuthorDetailDto GetAuthorById(int id);
-        public List<NewsItemDto> GetNewsItemsByAuthorId(int authorId);
+        public IEnumerable<NewsItemDto> GetNewsItemsByAuthorId(int authorId);
 
 
         int CreateAuthor(AuthorInputModel author);

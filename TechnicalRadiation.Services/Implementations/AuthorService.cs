@@ -9,18 +9,21 @@ namespace TechnicalRadiation.Services.Implementations
     public class AuthorService : IAuthorService
     {
         private readonly IAuthorRepository _authorRepository;
+        private readonly INewsRepository _newsRepository;
 
-        public AuthorService(IAuthorRepository authorRepository) 
+        public AuthorService(IAuthorRepository authorRepository, INewsRepository newsRepository) 
         {
             _authorRepository = authorRepository;
+            _newsRepository = newsRepository;
         }
+
 
         public IEnumerable<AuthorDto> GetAllAuthors() => _authorRepository.AddLinksToDtoAllAuthors(_authorRepository.GetAllAuthors());
 
         public AuthorDetailDto GetAuthorById(int id) => _authorRepository.AddLinksToDto (_authorRepository.GetAuthorById(id));
 
 
-        public List<NewsItemDto> GetNewsItemsByAuthorId(int authorId) =>_authorRepository.GetNewsItemsByAuthorId(authorId);
+        public IEnumerable<NewsItemDto> GetNewsItemsByAuthorId(int authorId) =>_newsRepository.AddLinksToDtoAllNews(_authorRepository.GetNewsItemsByAuthorId(authorId));
 
         public int CreateAuthor(AuthorInputModel author)
         {
