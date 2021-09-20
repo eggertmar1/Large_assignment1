@@ -9,3 +9,6 @@
 ## To update database
 ``` dotnet ef database update ```
 
+## Password
+```Key: Authorization, Value: root beer```
+
