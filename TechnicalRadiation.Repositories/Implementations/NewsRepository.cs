@@ -7,7 +7,7 @@ using TechnicalRadiation.Models.Entities;
 using System.Linq;
 using System;
 using TechnicalRadiation.Models.Extensions;
-//using AutoMapper;
+
 
 namespace TechnicalRadiation.Repositories.Implementations
 {
@@ -84,8 +84,6 @@ namespace TechnicalRadiation.Repositories.Implementations
             _dbContext.NewsItems.Remove(entity);
             _dbContext.SaveChanges();
         }
-<<<<<<< HEAD
-=======
         public NewsItemDetailDto AddLinksToDto(NewsItemDetailDto dto) 
         {
             dto.Links.AddReference("self", new {href = $"api/{dto.Id}"});
@@ -118,6 +116,5 @@ namespace TechnicalRadiation.Repositories.Implementations
             }
             return dtos;
         }
->>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
     }
 }

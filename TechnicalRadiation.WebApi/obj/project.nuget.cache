@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "McvJwb06zp3st7WTuATv942vlIH1Jb+hjAE48JsDM+I7n2hyZ+syW3k4aqUGSbbjfB2wS9/4gDFyJnAovg6xng==",
-=======
-  "dgSpecHash": "+I4YxS67tpFmS0eygrOgKaekczFgUJSbJsW2BVcpwH6r7I2N3t+7QmV0VTaAMsJ61E+ibQ4zUhV29zMgmtwcRg==",
->>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
+  "dgSpecHash": "ZooMHTSHjUesdO+yKf9l5zV87u2bDQu4o7QJPNbf+n43BIMNQxOueenbrGMwMfVaeU8+aa9IAFXVk1W/GqcBWQ==",
   "success": true,
   "projectFilePath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.WebApi/TechnicalRadiation.WebApi.csproj",
   "expectedPackageFiles": [
@@ -118,5 +114,12 @@
     "/Users/eggertsigtryggsson/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
     "/Users/eggertsigtryggsson/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.WebApi/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
