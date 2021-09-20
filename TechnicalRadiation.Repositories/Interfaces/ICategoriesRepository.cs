@@ -15,7 +15,9 @@ namespace TechnicalRadiation.Repositories.Interfaces
         int CreateCategory(CategoryInputModel category);
 
         void UpdateCategory(int id, CategoryInputModel category);
+
         void DeleteCategoryById(int id);
+        int LinkCategoryNews(int categoryid, int newsItemId);
     }
 
 }

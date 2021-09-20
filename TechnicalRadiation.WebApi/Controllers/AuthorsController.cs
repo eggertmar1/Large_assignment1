@@ -3,6 +3,7 @@ using TechnicalRadiation.Services.Implementations;
 using TechnicalRadiation.Services.Interfaces;
 using TechnicalRadiation.Models.InputModels;
 using TechnicalRadiation.Models.Attributes;
+using System.Net;
 
 namespace TechnicalRadiation.WebApi.Controllers 
 {
@@ -30,6 +31,7 @@ namespace TechnicalRadiation.WebApi.Controllers
 
         [HttpPost]
         [Route("")]
+        //[ProducesResponseType(StatusCodes.Status201Created)]
         [Authentication]
         public IActionResult CreateAuthor([FromBody] AuthorInputModel author)
         {
@@ -53,6 +55,15 @@ namespace TechnicalRadiation.WebApi.Controllers
         {
             _authorsService.DeleteAuthorById(id);
             return NoContent();
+        }
+
+        [HttpPost]
+        [Route("{authorid:int}/newsItems/{newsItemId:int}")]
+        [Authentication]
+        public IActionResult LinkAuthorNews(int authorid, int newsItemId)
+        {
+            _authorsService.LinkAuthorNews(authorid, newsItemId);
+            return Ok(authorid);
         }
     }
 }

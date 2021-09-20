@@ -18,6 +18,8 @@ namespace TechnicalRadiation.Services.Interfaces
 
         void DeleteCategoryById(int id);
 
+        int LinkCategoryNews(int categoryid, int newsItemId);
+
 
     }
 }

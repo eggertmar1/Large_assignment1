@@ -14,7 +14,10 @@ namespace TechnicalRadiation.Repositories.Interfaces
         int CreateAuthor(AuthorInputModel author);
 
         void UpdateAuthor(int id, AuthorInputModel author);
+
         void DeleteAuthorById(int id);
+
+        int LinkAuthorNews(int authorid, int newsItemId);
     
 
         public AuthorDetailDto AddLinksToDto(AuthorDetailDto dto); 

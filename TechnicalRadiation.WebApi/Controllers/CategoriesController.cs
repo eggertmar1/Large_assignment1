@@ -51,5 +51,15 @@ namespace TechnicalRadiation.WebApi.Controllers
             return NoContent();
         }
 
+
+        [HttpPost]
+        [Route("{category:int}/newsItems/{newsItemId:int}")]
+        [Authentication]
+        public IActionResult LinkCategoryNews(int categoryid, int newsItemId)
+        {
+            _categoriesService.LinkCategoryNews(categoryid, newsItemId);
+            return Ok(categoryid);
+        }
+
     }
 }

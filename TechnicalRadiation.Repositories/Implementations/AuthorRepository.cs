@@ -91,6 +91,19 @@ namespace TechnicalRadiation.Repositories.Implementations
             _dbContext.Authors.Remove(entity);
             _dbContext.SaveChanges();
         }
+
+        public int LinkAuthorNews(int authorid, int newsItemId)
+        {
+            var entity = new AuthorNewsItem
+            {
+                AuthorsId = authorid,
+                NewsItemsId = newsItemId
+            };
+            _dbContext.AuthorNewsItem.Add(entity);
+            _dbContext.SaveChanges();
+            return authorid;
+        }
+
         public AuthorDetailDto AddLinksToDto(AuthorDetailDto dto) 
         {
             dto.Links.AddReference("self", new {href = $"api/authors/{dto.Id}"});

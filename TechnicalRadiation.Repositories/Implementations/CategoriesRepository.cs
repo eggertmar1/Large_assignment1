@@ -95,6 +95,19 @@ namespace TechnicalRadiation.Repositories.Implementations
             _dbContext.Categories.Remove(entity);
             _dbContext.SaveChanges();
         }
+
+        public int LinkCategoryNews(int categoryid, int newsItemId)
+        {
+            var entity = new CategoryNewsItem
+            {
+                CategoriesId = categoryid,
+                NewsItemsId = newsItemId
+            };
+            _dbContext.CategoryNewsItem.Add(entity);
+            _dbContext.SaveChanges();
+            return categoryid;
+        }
+
         public CategoryDetailDto AddLinksToDto(CategoryDetailDto dto) 
         {
             dto.Links.AddReference("self", new {href = $"api/categories/{dto.Id}"});
