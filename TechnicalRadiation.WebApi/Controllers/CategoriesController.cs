@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using TechnicalRadiation.Services.Implementations;
 using TechnicalRadiation.Services.Interfaces;
 using TechnicalRadiation.Models.InputModels;
+using TechnicalRadiation.Models.Attributes;
 
 namespace TechnicalRadiation.WebApi.Controllers 
 {
@@ -25,6 +26,7 @@ namespace TechnicalRadiation.WebApi.Controllers
 
         [HttpPost]
         [Route("")]
+        [Authentication]
         public IActionResult CreateCategory([FromBody] CategoryInputModel category)
         {
             int newId = _categoriesService.CreateCategory(category);
@@ -33,6 +35,7 @@ namespace TechnicalRadiation.WebApi.Controllers
 
         [HttpPut]
         [Route("{id:int}")]
+        [Authentication]
         public IActionResult UpdateCategory(int id, [FromBody] CategoryInputModel category)
         {
             _categoriesService.UpdateCategory(id, category);
@@ -41,6 +44,7 @@ namespace TechnicalRadiation.WebApi.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [Authentication]
         public IActionResult DeleteCategoryById(int id)
         {
             _categoriesService.DeleteCategoryById(id);
