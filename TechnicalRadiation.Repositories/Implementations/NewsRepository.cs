@@ -6,6 +6,7 @@ using TechnicalRadiation.Models.InputModels;
 using TechnicalRadiation.Models.Entities;
 using System.Linq;
 using System;
+using TechnicalRadiation.Models.Extensions;
 //using AutoMapper;
 
 namespace TechnicalRadiation.Repositories.Implementations
@@ -83,5 +84,40 @@ namespace TechnicalRadiation.Repositories.Implementations
             _dbContext.NewsItems.Remove(entity);
             _dbContext.SaveChanges();
         }
+<<<<<<< HEAD
+=======
+        public NewsItemDetailDto AddLinksToDto(NewsItemDetailDto dto) 
+        {
+            dto.Links.AddReference("self", new {href = $"api/{dto.Id}"});
+            dto.Links.AddReference("edit", new {href = $"api/{dto.Id}"});
+            dto.Links.AddReference("delete", new {href = $"api/{dto.Id}"});
+            dto.Links.AddReference("authors", new {href = $"api/authors/{dto.Id}"});
+            dto.Links.AddListReference(
+                "categories",
+                _dbContext.CategoryNewsItem  
+                    .Where(i => i.CategoriesId == dto.Id)
+                    .Select(i => $"api/categories/{i.CategoriesId}")
+            );
+            return dto;
+
+        }
+        public IEnumerable<NewsItemDto> AddLinksToDtoAllNews(IEnumerable<NewsItemDto> dtos) 
+        {
+            foreach(NewsItemDto dto in dtos)
+            {
+                dto.Links.AddReference("self", new {href = $"api/{dto.Id}"});
+                dto.Links.AddReference("edit", new {href = $"api/{dto.Id}"});
+                dto.Links.AddReference("delete", new {href = $"api/{dto.Id}"});
+                dto.Links.AddReference("authors", new {href = $"api/authors/{dto.Id}"});
+                dto.Links.AddListReference(
+                    "categories",
+                    _dbContext.CategoryNewsItem  
+                        .Where(i => i.CategoriesId == dto.Id)
+                        .Select(i => $"api/categories/{i.Categories.Id}")
+                );
+            }
+            return dtos;
+        }
+>>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
     }
 }

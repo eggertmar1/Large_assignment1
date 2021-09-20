@@ -6,7 +6,11 @@ using System.Collections.Generic;
 using TechnicalRadiation.Models.InputModels;
 using TechnicalRadiation.Models.Entities;
 using System.Globalization;
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
+=======
+using TechnicalRadiation.Models.Extensions;
+>>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
 
 namespace TechnicalRadiation.Repositories.Implementations 
 {
@@ -94,5 +98,23 @@ namespace TechnicalRadiation.Repositories.Implementations
             _dbContext.Categories.Remove(entity);
             _dbContext.SaveChanges();
         }
+        public CategoryDetailDto AddLinksToDto(CategoryDetailDto dto) 
+        {
+            dto.Links.AddReference("self", new {href = $"api/categories/{dto.Id}"});
+            dto.Links.AddReference("edit", new {href = $"api/categories/{dto.Id}"});
+            dto.Links.AddReference("delete", new {href = $"api/categories/{dto.Id}"});
+            return dto;
+        }
+        public IEnumerable<CategoryDto> AddLinksToDtoAllCategories(IEnumerable<CategoryDto> dtos) 
+        {
+            foreach(CategoryDto dto in dtos)
+            {
+                dto.Links.AddReference("self", new {href = $"api/categories/{dto.Id}"});
+                dto.Links.AddReference("edit", new {href = $"api/categories/{dto.Id}"});
+                dto.Links.AddReference("delete", new {href = $"api/categories/{dto.Id}"});
+            }
+            return dtos;
+        }
+
     }
 }

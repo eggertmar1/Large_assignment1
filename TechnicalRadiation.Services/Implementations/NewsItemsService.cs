@@ -15,9 +15,9 @@ namespace TechnicalRadiation.Services.Implementations
             _newsRepository = newsRepository;
         }
 
-        public IEnumerable<NewsItemDto> GetAllNewsItems() => _newsRepository.GetAllNewsItems();
+        public IEnumerable<NewsItemDto> GetAllNewsItems() =>_newsRepository.AddLinksToDtoAllNews(_newsRepository.GetAllNewsItems());
     
-        public NewsItemDetailDto GetNewsItemById(int id) => _newsRepository.GetNewsItemById(id);
+        public NewsItemDetailDto GetNewsItemById(int id) =>_newsRepository.AddLinksToDto(_newsRepository.GetNewsItemById(id));
 
         public int CreateNewsItem(NewsItemInputModel item)
         {

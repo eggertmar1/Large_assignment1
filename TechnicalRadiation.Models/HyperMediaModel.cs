@@ -1,12 +1,13 @@
 using System.Dynamic;
 using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace TechnicalRadiation.Models
 {
     public class HyperMediaModel
     {
         public HyperMediaModel() { Links = new ExpandoObject(); }
-        [JsonProperty(PropertyName = "_links")]
+        [JsonPropertyName("_links")]
         public ExpandoObject Links { get; set; }
     }
 }

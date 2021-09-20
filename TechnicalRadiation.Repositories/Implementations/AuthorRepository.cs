@@ -5,7 +5,12 @@ using System.Linq;
 using System.Collections.Generic;
 using TechnicalRadiation.Models.InputModels;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
 using TechnicalRadiation.Models.Entities;
+=======
+using TechnicalRadiation.Models.Extensions;
+using TechnicalRadiation.Models;
+>>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
 
 namespace TechnicalRadiation.Repositories.Implementations 
 {
@@ -52,6 +57,7 @@ namespace TechnicalRadiation.Repositories.Implementations
             }).ToList();
             return newsItems;
         }
+<<<<<<< HEAD
 
         public int CreateAuthor(AuthorInputModel author)
         {
@@ -88,6 +94,38 @@ namespace TechnicalRadiation.Repositories.Implementations
             // Delete the entity
             _dbContext.Authors.Remove(entity);
             _dbContext.SaveChanges();
+=======
+        public AuthorDetailDto AddLinksToDto(AuthorDetailDto dto) 
+        {
+            dto.Links.AddReference("self", new {href = $"api/authors/{dto.Id}"});
+            dto.Links.AddReference("edit", new {href = $"api/authors/{dto.Id}"});
+            dto.Links.AddReference("delete", new {href = $"api/authors/{dto.Id}"});
+            dto.Links.AddReference("newsItems", new {href = $"api/authors/{dto.Id}/newsItems"});
+            dto.Links.AddListReference(
+                "newsItemsDetailed",
+                _dbContext.AuthorNewsItem  
+                    .Where(i => i.AuthorsId == dto.Id)
+                    .Select(i => $"api/{i.NewsItemsId}")
+            );
+            return dto;
+        }
+        public IEnumerable<AuthorDto> AddLinksToDtoAllAuthors(IEnumerable<AuthorDto> dtos) 
+        {
+            foreach(AuthorDto dto in dtos)
+            {
+                dto.Links.AddReference("self", new {href = $"api/authors/{dto.Id}"});
+                dto.Links.AddReference("edit", new {href = $"api/authors/{dto.Id}"});
+                dto.Links.AddReference("delete", new {href = $"api/authors/{dto.Id}"});
+                dto.Links.AddReference("newsItems", new {href = $"api/authors/{dto.Id}/newsItems"});
+                dto.Links.AddListReference(
+                    "newsItemsDetailed",
+                    _dbContext.AuthorNewsItem  
+                        .Where(i => i.AuthorsId == dto.Id)
+                        .Select(i => $"api/{i.NewsItemsId}")
+                );
+            }
+            return dtos;
+>>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
         }
     }
 }
