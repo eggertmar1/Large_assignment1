@@ -38,7 +38,7 @@ namespace TechnicalRadiation.WebApi.Controllers
                 throw new ModelFormatException(ModelState.RetrieveErrorString());
             }
             int newId = _categoriesService.CreateCategory(category);
-            return Ok(_categoriesService.GetCategoryById(newId));
+            return CreatedAtAction("GetCategoryById", new {id = newId}, _categoriesService.GetCategoryById(newId));
         }
 
         [HttpPut]
@@ -70,7 +70,7 @@ namespace TechnicalRadiation.WebApi.Controllers
         public IActionResult LinkCategoryNews(int categoryid, int newsItemId)
         {
             _categoriesService.LinkCategoryNews(categoryid, newsItemId);
-            return Ok(_categoriesService.GetCategoryById(categoryid));
+            return CreatedAtAction("GetCategoryById", new {id = categoryid}, _categoriesService.GetCategoryById(categoryid));
         }
 
     }

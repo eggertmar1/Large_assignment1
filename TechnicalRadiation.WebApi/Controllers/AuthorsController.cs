@@ -41,7 +41,7 @@ namespace TechnicalRadiation.WebApi.Controllers
                 throw new ModelFormatException(ModelState.RetrieveErrorString());
             }
             int newId = _authorsService.CreateAuthor(author);
-            return Ok(_authorsService.GetAuthorById(newId));
+            return CreatedAtAction("GetAuthorById", new {id = newId}, _authorsService.GetAuthorById(newId));
         }
 
         [HttpPut]
@@ -72,7 +72,7 @@ namespace TechnicalRadiation.WebApi.Controllers
         public IActionResult LinkAuthorNews(int authorid, int newsItemId)
         {
             _authorsService.LinkAuthorNews(authorid, newsItemId);
-            return Ok(_authorsService.GetAuthorById(authorid));
+            return CreatedAtAction("GetAuthorById", new {id = authorid}, _authorsService.GetAuthorById(authorid));
         }
     }
 }

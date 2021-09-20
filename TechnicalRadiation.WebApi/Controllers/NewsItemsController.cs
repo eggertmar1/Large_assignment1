@@ -45,7 +45,7 @@ namespace TechnicalRadiation.WebApi.Controllers
                 throw new ModelFormatException(ModelState.RetrieveErrorString());
             }
             int newId = _newsItemService.CreateNewsItem(item);
-            return Ok(_newsItemService.GetNewsItemById(newId));
+            return CreatedAtAction("GetNewsItemById", new {id = newId}, _newsItemService.GetNewsItemById(newId));
         }
 
         [HttpPut]
