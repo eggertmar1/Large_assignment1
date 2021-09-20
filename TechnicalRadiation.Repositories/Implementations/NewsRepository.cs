@@ -23,7 +23,9 @@ namespace TechnicalRadiation.Repositories.Implementations
 
         public IEnumerable<NewsItemDto> GetAllNewsItems() 
         {
-            var newsItems = _dbContext.NewsItems.Select(n => new NewsItemDto 
+            var newsItems = _dbContext.NewsItems
+            .OrderByDescending(n => n.PublishDate)
+            .Select(n => new NewsItemDto 
             {
                 Id = n.Id,
                 Title = n.Title,

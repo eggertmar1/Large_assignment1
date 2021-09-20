@@ -53,7 +53,7 @@ namespace TechnicalRadiation.WebApi.Controllers
 
 
         [HttpPost]
-        [Route("{category:int}/newsItems/{newsItemId:int}")]
+        [Route("{categoryid:int}/newsItems/{newsItemId:int}")]
         [Authentication]
         public IActionResult LinkCategoryNews(int categoryid, int newsItemId)
         {

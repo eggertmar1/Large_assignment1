@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechnicalRadiation.Repositories.Data;
 
 namespace TechnicalRadiation.WebApi.Migrations
 {
     [DbContext(typeof(NewsDbContext))]
-    partial class NewsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210920165821_newsitemslinkCategories")]
+    partial class newsitemslinkCategories
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -122,6 +124,9 @@ namespace TechnicalRadiation.WebApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("CategoriesId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("TEXT");
 
@@ -147,6 +152,8 @@ namespace TechnicalRadiation.WebApi.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoriesId");
 
                     b.ToTable("NewsItems");
                 });
@@ -188,7 +195,7 @@ namespace TechnicalRadiation.WebApi.Migrations
             modelBuilder.Entity("TechnicalRadiation.Models.Entities.CategoryNewsItem", b =>
                 {
                     b.HasOne("TechnicalRadiation.Models.Entities.Categories", "Categories")
-                        .WithMany("CategoryNewsItemsLink")
+                        .WithMany()
                         .HasForeignKey("CategoriesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -204,9 +211,16 @@ namespace TechnicalRadiation.WebApi.Migrations
                     b.Navigation("NewsItems");
                 });
 
+            modelBuilder.Entity("TechnicalRadiation.Models.Entities.NewsItems", b =>
+                {
+                    b.HasOne("TechnicalRadiation.Models.Entities.Categories", null)
+                        .WithMany("NewsItemsLink")
+                        .HasForeignKey("CategoriesId");
+                });
+
             modelBuilder.Entity("TechnicalRadiation.Models.Entities.Categories", b =>
                 {
-                    b.Navigation("CategoryNewsItemsLink");
+                    b.Navigation("NewsItemsLink");
                 });
 
             modelBuilder.Entity("TechnicalRadiation.Models.Entities.NewsItems", b =>
