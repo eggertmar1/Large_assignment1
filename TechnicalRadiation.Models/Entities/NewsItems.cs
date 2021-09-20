@@ -19,6 +19,6 @@ namespace TechnicalRadiation.Models.Entities
 
         // Navigation properties
         public ICollection<Authors> AuthorLink { get; set; }
-        public ICollection<Categories> CategoryLink { get; set; }
+        public ICollection<CategoryNewsItem> CategoryLink { get; set; }
     }
 }

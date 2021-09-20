@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "McvJwb06zp3st7WTuATv942vlIH1Jb+hjAE48JsDM+I7n2hyZ+syW3k4aqUGSbbjfB2wS9/4gDFyJnAovg6xng==",
+=======
   "dgSpecHash": "+I4YxS67tpFmS0eygrOgKaekczFgUJSbJsW2BVcpwH6r7I2N3t+7QmV0VTaAMsJ61E+ibQ4zUhV29zMgmtwcRg==",
+>>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
   "success": true,
   "projectFilePath": "/Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.WebApi/TechnicalRadiation.WebApi.csproj",
   "expectedPackageFiles": [

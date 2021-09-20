@@ -264,5 +264,9 @@ C:/Users/oliva/OneDrive/Tölvunarfræði/3.önn_haust_2021/Vefþjónustur/Large_
 C:/Users/oliva/OneDrive/Tölvunarfræði/3.önn_haust_2021/Vefþjónustur/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.pdb
 C:/Users/oliva/OneDrive/Tölvunarfræði/3.önn_haust_2021/Vefþjónustur/Large_assignment1/TechnicalRadiation.WebApi/obj/Debug/net5.0/TechnicalRadiation.WebApi.genruntimeconfig.cache
 =======
+<<<<<<< HEAD
+>>>>>>> 030c19fab9ececf174f17fcba91c83066a6b4bf0
+=======
+>>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
 >>>>>>> a3470cc2df3f148b28002eb9379d3e9e579d6e7d
 /Users/eggertsigtryggsson/Documents/Vefþjónustur/TechnicalRadiation/Large_assignment1/TechnicalRadiation.WebApi/bin/Debug/net5.0/AutoMapper.dll

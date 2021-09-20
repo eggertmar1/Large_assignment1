@@ -7,6 +7,7 @@ using TechnicalRadiation.Models.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TechnicalRadiation.Models.Attributes;
 
 namespace TechnicalRadiation.WebApi.Controllers 
 {
@@ -35,14 +36,17 @@ namespace TechnicalRadiation.WebApi.Controllers
 
         [HttpPost]
         [Route("")]
+        [Authentication]
         public IActionResult CreateNewsItem([FromBody] NewsItemInputModel item)
         {
+            Console.WriteLine(Request.Headers["Authorization"]);
             int newId = _newsItemService.CreateNewsItem(item);
             return Ok(newId);
         }
 
         [HttpPut]
         [Route("{id:int}")]
+        [Authentication]
         public IActionResult UpdateNewsItem(int id, [FromBody] NewsItemInputModel item)
         {
             _newsItemService.UpdateNewsItem(id, item);
@@ -51,6 +55,7 @@ namespace TechnicalRadiation.WebApi.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [Authentication]
         public IActionResult DeleteNewsItemById(int id)
         {
             _newsItemService.DeleteNewsItemById(id);

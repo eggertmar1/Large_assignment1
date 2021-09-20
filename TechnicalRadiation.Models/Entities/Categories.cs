@@ -13,6 +13,5 @@ namespace TechnicalRadiation.Models.Entities
         public DateTime CreatedDate { get; set; }
         public DateTime ModifiedDate { get; set; }
 
-        public ICollection<NewsItems> NewsItemsLink { get; set; }
     }
 }

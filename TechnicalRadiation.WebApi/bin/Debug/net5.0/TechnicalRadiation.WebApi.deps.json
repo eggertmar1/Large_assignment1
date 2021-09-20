@@ -1476,7 +1476,8 @@
       "TechnicalRadiation.Models/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.10",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.1",
+          "Swashbuckle.AspNetCore": "5.6.3"
         },
         "runtime": {
           "TechnicalRadiation.Models.dll": {}

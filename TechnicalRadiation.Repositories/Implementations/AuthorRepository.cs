@@ -5,8 +5,12 @@ using System.Linq;
 using System.Collections.Generic;
 using TechnicalRadiation.Models.InputModels;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
+using TechnicalRadiation.Models.Entities;
+=======
 using TechnicalRadiation.Models.Extensions;
 using TechnicalRadiation.Models;
+>>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
 
 namespace TechnicalRadiation.Repositories.Implementations 
 {
@@ -53,6 +57,44 @@ namespace TechnicalRadiation.Repositories.Implementations
             }).ToList();
             return newsItems;
         }
+<<<<<<< HEAD
+
+        public int CreateAuthor(AuthorInputModel author)
+        {
+            var entity = new Authors
+            {
+                Name = author.Name,
+                ProfileImgSource = author.ProfileImgSource,
+                Bio = author.Bio,
+                ModifiedBy = "TechnicalRadiationAdmin"
+
+            };
+            _dbContext.Authors.Add(entity);
+            _dbContext.SaveChanges();
+            return entity.Id;
+        }
+
+        public void UpdateAuthor(int id, AuthorInputModel author)
+        {
+            var entity = _dbContext.Authors.FirstOrDefault(a => a.Id == id);
+            if (entity == null) { return; }
+
+            entity.Name = author.Name;
+            entity.ProfileImgSource = author.ProfileImgSource;
+            entity.Bio = author.Bio;
+
+            _dbContext.SaveChanges();
+        }
+
+        public void DeleteAuthorById(int id)
+        {
+            var entity = _dbContext.Authors.FirstOrDefault(r => r.Id == id);
+            if (entity == null) { return; }
+
+            // Delete the entity
+            _dbContext.Authors.Remove(entity);
+            _dbContext.SaveChanges();
+=======
         public AuthorDetailDto AddLinksToDto(AuthorDetailDto dto) 
         {
             dto.Links.AddReference("self", new {href = $"api/authors/{dto.Id}"});
@@ -83,6 +125,7 @@ namespace TechnicalRadiation.Repositories.Implementations
                 );
             }
             return dtos;
+>>>>>>> d765918bf5a8c74fc2c597485707b27d4c38b514
         }
     }
 }
