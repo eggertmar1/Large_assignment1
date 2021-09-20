@@ -4,6 +4,7 @@ using TechnicalRadiation.Services.Interfaces;
 using TechnicalRadiation.Models.InputModels;
 using TechnicalRadiation.Models.Attributes;
 using System.Net;
+using TechnicalRadiation.WebApi.Extensions;
 
 namespace TechnicalRadiation.WebApi.Controllers 
 {
@@ -35,8 +36,12 @@ namespace TechnicalRadiation.WebApi.Controllers
         [Authentication]
         public IActionResult CreateAuthor([FromBody] AuthorInputModel author)
         {
+            if (!ModelState.IsValid)
+            {
+                throw new ModelFormatException(ModelState.RetrieveErrorString());
+            }
             int newId = _authorsService.CreateAuthor(author);
-            return Ok(newId);
+            return Ok(_authorsService.GetAuthorById(newId));
         }
 
         [HttpPut]
@@ -44,8 +49,12 @@ namespace TechnicalRadiation.WebApi.Controllers
         [Authentication]
         public IActionResult UpdateAuthor(int id, [FromBody] AuthorInputModel author)
         {
+            if (!ModelState.IsValid)
+            {
+                throw new ModelFormatException(ModelState.RetrieveErrorString());
+            }
             _authorsService.UpdateAuthor(id, author);
-            return NoContent();
+            return Ok(_authorsService.GetAuthorById(id));
         }
 
         [HttpDelete]
@@ -54,7 +63,7 @@ namespace TechnicalRadiation.WebApi.Controllers
         public IActionResult DeleteAuthorById(int id)
         {
             _authorsService.DeleteAuthorById(id);
-            return NoContent();
+            return Ok(_authorsService.GetAuthorById(id));
         }
 
         [HttpPost]
@@ -63,7 +72,7 @@ namespace TechnicalRadiation.WebApi.Controllers
         public IActionResult LinkAuthorNews(int authorid, int newsItemId)
         {
             _authorsService.LinkAuthorNews(authorid, newsItemId);
-            return Ok(authorid);
+            return Ok(_authorsService.GetAuthorById(authorid));
         }
     }
 }

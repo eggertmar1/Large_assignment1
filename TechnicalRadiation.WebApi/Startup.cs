@@ -17,6 +17,7 @@ using TechnicalRadiation.Repositories.Implementations;
 using TechnicalRadiation.Repositories.Interfaces;
 using TechnicalRadiation.Services.Implementations;
 using TechnicalRadiation.Services.Interfaces;
+using TechnicalRadiation.WebApi.ExceptionHandlerExtensions;
 
 namespace TechnicalRadiation.WebApi
 {
@@ -61,6 +62,8 @@ namespace TechnicalRadiation.WebApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TechnicalRadiation v1"));
             }
+
+            app.UseGlobalExceptionHandler();
 
             app.UseHttpsRedirection();
 

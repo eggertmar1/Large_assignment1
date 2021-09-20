@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TechnicalRadiation.Models.Attributes;
+using TechnicalRadiation.WebApi.Extensions;
 
 namespace TechnicalRadiation.WebApi.Controllers 
 {
@@ -39,9 +40,12 @@ namespace TechnicalRadiation.WebApi.Controllers
         [Authentication]
         public IActionResult CreateNewsItem([FromBody] NewsItemInputModel item)
         {
-            Console.WriteLine(Request.Headers["Authorization"]);
+            if (!ModelState.IsValid)
+            {
+                throw new ModelFormatException(ModelState.RetrieveErrorString());
+            }
             int newId = _newsItemService.CreateNewsItem(item);
-            return Ok(newId);
+            return Ok(_newsItemService.GetNewsItemById(newId));
         }
 
         [HttpPut]
@@ -49,8 +53,12 @@ namespace TechnicalRadiation.WebApi.Controllers
         [Authentication]
         public IActionResult UpdateNewsItem(int id, [FromBody] NewsItemInputModel item)
         {
+            if (!ModelState.IsValid)
+            {
+                throw new ModelFormatException(ModelState.RetrieveErrorString());
+            }
             _newsItemService.UpdateNewsItem(id, item);
-            return NoContent();
+            return Ok(_newsItemService.GetNewsItemById(id));
         }
 
         [HttpDelete]
@@ -59,7 +67,7 @@ namespace TechnicalRadiation.WebApi.Controllers
         public IActionResult DeleteNewsItemById(int id)
         {
             _newsItemService.DeleteNewsItemById(id);
-            return NoContent();
+            return Ok(_newsItemService.GetNewsItemById(id));
         }
         
     }

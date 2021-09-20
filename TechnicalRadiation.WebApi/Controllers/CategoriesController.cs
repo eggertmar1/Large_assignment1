@@ -3,6 +3,7 @@ using TechnicalRadiation.Services.Implementations;
 using TechnicalRadiation.Services.Interfaces;
 using TechnicalRadiation.Models.InputModels;
 using TechnicalRadiation.Models.Attributes;
+using TechnicalRadiation.WebApi.Extensions;
 
 namespace TechnicalRadiation.WebApi.Controllers 
 {
@@ -22,15 +23,22 @@ namespace TechnicalRadiation.WebApi.Controllers
 
         [HttpGet]
         [Route("{id:int}", Name = "GetCategoryById")]
-        public IActionResult GetCategoryById(int id) => Ok(_categoriesService.GetCategoryById(id));
+        public IActionResult GetCategoryById(int id) 
+        {
+            return Ok(_categoriesService.GetCategoryById(id));
+        }
 
         [HttpPost]
         [Route("")]
         [Authentication]
         public IActionResult CreateCategory([FromBody] CategoryInputModel category)
         {
+            if (!ModelState.IsValid)
+            {
+                throw new ModelFormatException(ModelState.RetrieveErrorString());
+            }
             int newId = _categoriesService.CreateCategory(category);
-            return Ok(newId);
+            return Ok(_categoriesService.GetCategoryById(newId));
         }
 
         [HttpPut]
@@ -38,8 +46,12 @@ namespace TechnicalRadiation.WebApi.Controllers
         [Authentication]
         public IActionResult UpdateCategory(int id, [FromBody] CategoryInputModel category)
         {
+            if (!ModelState.IsValid)
+            {
+                throw new ModelFormatException(ModelState.RetrieveErrorString());
+            }
             _categoriesService.UpdateCategory(id, category);
-            return NoContent();
+            return Ok(_categoriesService.GetCategoryById(id));
         }
 
         [HttpDelete]
@@ -48,7 +60,7 @@ namespace TechnicalRadiation.WebApi.Controllers
         public IActionResult DeleteCategoryById(int id)
         {
             _categoriesService.DeleteCategoryById(id);
-            return NoContent();
+            return Ok(_categoriesService.GetCategoryById(id));
         }
 
 
@@ -58,7 +70,7 @@ namespace TechnicalRadiation.WebApi.Controllers
         public IActionResult LinkCategoryNews(int categoryid, int newsItemId)
         {
             _categoriesService.LinkCategoryNews(categoryid, newsItemId);
-            return Ok(categoryid);
+            return Ok(_categoriesService.GetCategoryById(categoryid));
         }
 
     }
